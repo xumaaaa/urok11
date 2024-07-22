@@ -1,0 +1,60 @@
+.card{
+    width: 500px;
+   
+    background-image: url(https://flowmingo.ru/wp-content/themes/flowmingo/images/projects/lime/preview/block-bg.jpg);
+
+    display: flex;
+
+    align-items: center;
+    
+    justify-content: center;
+
+    transition: 0.6s;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    img{
+        scale: 0.5;
+        position: absolute;
+        transition: 0.6s
+    }
+
+    :nth-child(1){
+        position: relative;
+        z-index: 10;
+    }
+
+
+    &:hover{
+
+        background-image: url(https://flowmingo.ru/wp-content/themes/flowmingo/images/projects/lime/preview/block-bg-hover.jpg);
+
+         :nth-child(2){
+        translate: -100px 0;
+        }
+
+        :nth-child(3){
+            translate: 0 -130px;
+        }
+
+        :nth-child(4){
+            translate: 150px 0;
+        }
+
+        :nth-child(5){
+            translate: 150px -69px;
+            rotate: 50deg;
+
+        }
+
+        :nth-child(7){
+            translate: -10  0px -30px;
+        }
+
+    }
+    
+}
